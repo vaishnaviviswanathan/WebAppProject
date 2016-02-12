@@ -1,0 +1,79 @@
+<html>
+<body>
+<br>
+<br>
+<b>
+
+<p style="text-align:center"><a href="ooqadrep.html"><img src="hom.png" width="50" height="50"></img></a>
+SELECT THE COURSE DETAILS YOU REQUIRE</p>
+<p style="text-align:center">(for course details available for this semester lookup on the home page)</p>
+</b>
+<br>
+<br>
+
+<form action="ser5" method="GET" >
+
+<table align="center">
+
+<tr>
+<td id="id1"><b><font color="red">*</font>TERM:</b></td>
+
+<td>
+<select name="term" id="term">
+<option value="0">SELECT TERM</option>
+<option value="FALL">FALL</option>
+<option value="WINTER">WINTER</option>
+<option value="SPRING">SPRING</option>
+<option value="SUMMER">SUMMER</option>
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+<td id="id1"><b><font color="red">*</font>DEPARTMENT:</b></td>
+<td> <select name="department" id="department"><option value="0">SELECT DEPARTMENT</option>
+		  <option value="SPACESCIENCE">SPACE SCIENCE</option> 
+          <option value="ENGINEERING">ENGINEERING</option>
+          <option value="ARCHITECTURE">ARCHITECTURE AND URBAN PLANNING</option>
+          <option value="HEALTH">PUBLIC HEALTH</option>
+		  </select></td>
+</tr>
+
+
+<td id="id1"><b><font color="red">*</font>COURSE SELECTION:</b></td>
+		  <td> 
+		  <select name="branch" id="course">
+		  <option value="0">SELECT REQUIRED COURSE</option>
+		  <option value="AOSS">Atmospheric,Oceanic And Space Sciences(AOSS)-SPACE SCIENCE</option>
+		  <option value="AERO">Aerospace Engineering (AEROSP)-ENGINEERING</option> 
+          <option value="ARCH">Architecture(ARCH)-ARCHITECTURE</option>
+          <option value="BIOSTAT">Biostatistics(BIOSTAT)-PUBLIC HEALTH</option>
+          </select>
+          </td>
+</tr>
+
+<tr>
+<td id="id1"><b><font color="red">*</font>PROFESSOR REQUIRED:</b></td>
+<td><select name="professor" id="professor" onblur="professornew()">
+		  <option value="0">SELECT REQUIRED PROFESSOR</option>
+          <option value="M.james">M.james</option> 
+          <option value="P.Thomas">P.Thomas</option>
+          <option value="J.E.Smith">J.E.Smith</option>
+          <option value="L.K.Hilary">L.K.Hilary</option>
+          </select>
+</td>
+</tr>
+
+</table>
+<br>
+
+<div style="text-align:center">
+<input type="submit"  name="acc" style="color:green;width:120px;font-weight:bold" value="SUBMIT"/>
+<p>(ON CLICK IF COURSE AVAILABLE THEN SUBMISSION <br>WILL BE ACCEPTED AND DIRECTED TO THE HOME PAGE)</p>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="extcss.css">
+
+<style>
+#img1
+{
+float:left;
+}
+</style>
+
+<script>
+
+
+function course()
+{
+	window.location.href="details.html";
+}//function close
+
+
+function admin()
+{
+	window.location.href="admin.html";
+}//admin close
+
+/* <body bgcolor="#12345"> -----  bgcolor - for applying color to background*/
+/* <div> is block-line and <span> is in-line (difference between them)*/
+
+</script>
+
+</head>
+
+<body background="bg.jpg">
+<h1 id="padding" style="font-size:30px ; color:white"><img src="l.jpeg" height="50" weight="50">MICHIGAN STATE UNIVERSITY</h1>
+
+<img src="hom.png" width="50" height="50"></img><br>
+
+<form action="ooadserv" method="GET">
+
+<button type="button" id="button2"><b>ABOUT</b></button>
+<button type="button" id="button2" class="bclass"><b>ADMISSION</b><span><b><i><a href="ooad3.html">APPLY</a><br>VISIT<br>FINANCIAL AID<br>TUTION FEES</i><b></span></button>
+<button type="button" id="button2"><b>ACADEMICS</b></button>
+<button type="button" id="button2"><b>RESEARCH</b></button>
+<button type="button" id="button2"><b>GLOBAL</b></button>
+<button type="button" id="button2"><b>ENGAGEMENT</b></button>
+
+<div style="text-align:center">
+<button type="button" style="color:green ; width: 300px ; font-weight:bold" onclick="admin()" align="middle">ADMINISTRATOR LOGIN</button>
+</div>
+</form>
+
+<div style="text-align:center">
+<button type="button" style="color:green ; width: 300px ; font-weight:bold" align="middle" onclick="course()">COURSE DETAILS</button>
+</div>
+<br>
+<br>
+<img src="muni.jpg" id="img1"><img src="news.jpg" height="600" width="320"></img>
+</body>
+</html>

@@ -1,0 +1,333 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="extcss.css">
+<script>
+
+function pswdcheck()
+{
+var e=document.getElementById("pswd").value;
+var e1=document.getElementById("passworderror");
+var ck_mob =/^[A-Za-z]{5,}$/;
+if(e.length==0)
+{
+e1.innerHTML="enter password";
+e1.style.color="red";
+}//if close
+				else
+				{
+				if(!ck_mob.test(form1.pswd.value))
+				{
+						e1.innerHTML="should contain at least 5 characters AND ALPHABETS ONLY";
+						e1.style.color="red";
+						document.getElementById("pswd").value="";
+				}//else if close
+				else
+				{
+						e1.innerHTML="password-valid";
+						e1.style.color="green";
+				}//else close
+				}//inner else close
+				}//checkname function close
+
+function checkname()
+{
+var e=document.getElementById("name").value;
+var e1=document.getElementById("nameerror");
+if(e.length==0)
+{
+e1.innerHTML="enter name";
+e1.style.color="red";
+}//if close
+else
+{
+e1.innerHTML="name-valid";
+e1.style.color="green";
+}
+}//checkname function close
+
+
+function emailadd()
+{
+var e2=document.getElementById("email").value;
+var e3=document.getElementById("emailerror");
+if(e2.length==0)
+{
+e3.innerHTML="enter emailid";
+e3.style.color="red";
+}//if close
+else
+{
+e3.innerHTML="email-valid";
+e3.style.color="green";
+}
+}//checkname function close
+
+function termnew()
+{
+var e4=document.getElementById("term").value;
+var e5=document.getElementById("termerror");
+if(e4.length==0)
+{
+e5.innerHTML="select term";
+e5.style.color="red";
+}//if close
+else
+{
+e5.innerHTML="term-valid";
+e5.style.color="green";
+}//else close
+}//checkname function close
+
+function departmentnew()
+{
+var e2=document.getElementById("department").value;
+var e3=document.getElementById("departmenterror");
+if(e2.length==0)
+{
+e3.innerHTML="select department";
+e3.style.color="red";
+}//if close
+else
+{
+e3.innerHTML="department-valid";
+e3.style.color="green";
+}//else close
+}//checkname function close
+
+
+function coursenew()
+{
+var e2=document.getElementById("course").value;
+var e3=document.getElementById("courseerror");
+if(e2.length==0)
+{
+e3.innerHTML="select course";
+e3.style.color="red";
+}//if close
+else
+{
+e3.innerHTML="course-valid";
+e3.style.color="green";
+}//else close
+}//checkname function close
+
+
+function professornew()
+{
+var e2=document.getElementById("professor").value;
+var e3=document.getElementById("professorerror");
+if(e2.length==0)
+{
+e3.innerHTML="select professor";
+e3.style.color="red";
+}//if close
+else
+{
+e3.innerHTML="professor-valid";
+e3.style.color="green";
+}
+}//checkname function close
+
+function marksaccq()
+{
+var e2=document.getElementById("marks").value;
+var e3=document.getElementById("markserror");
+if(e2.length==0)
+{
+e3.innerHTML="enter marks";
+e3.style.color="red";
+}//if close
+else
+{
+e3.innerHTML="marks-valid";
+e3.style.color="green";
+}
+}//checkname function close
+
+function accp()
+{
+var e10=document.getElementById("terms").checked;
+	var e11=document.getElementById("accepted");
+	if(e10==false)
+	{
+		e11.innerHTML="accept the terms";
+		e11.style.color="red";
+	}
+	else
+	{
+	e11.innerHTML="accepted the terms";
+	e11.style.color="green";
+	}
+}
+
+function fsubmit()
+{	
+	var e=document.getElementById("nameerror");
+	var e1=document.getElementById("emailerror");
+	var e2=document.getElementById("termerror");
+	var e3=document.getElementById("departmenterror");
+	var e4=document.getElementById("courseerror");
+	var e5=document.getElementById("professorerror");
+	var e6=document.getElementById("markserror");
+	var e7=document.getElementById("accepted");
+	var e8=document.getElementById("passworderror");
+	
+	if(e8.innerHTML=="password-valid" && e.innerHTML=="name-valid" && e1.innerHTML=="email-valid" && e2.innerHTML=="term-valid" &&  e3.innerHTML=="department-valid" && e4.innerHTML=="course-valid" && e5.innerHTML=="professor-valid" && e6.innerHTML=="marks-valid" && e7.innerHTML=="accepted the terms")
+	{
+		//alert("Form Submitted Successfully");
+		window.location.href="http://localhost:8080/ooadpro/appid.html";
+	}//if close
+	else
+	{
+		alert("Resubmit the form again");
+		//response.sendRedirect("loginpage.html");
+	}//else close
+}//function fsubmit() close
+
+
+</script>
+</head>
+<body background="bg.jpg">
+<h1 id="padding" style="font-size:30px ; color:white"><img src="l.jpeg" height="50" weight="50">MICHIGAN STATE UNIVERSITY</h1>
+<a href="ooqadrep.html"><img src="hom.png" width="50" height="50"></img></a>
+<button type="button" id="button2"><b>ABOUT</b></button>
+<button type="button" id="button2" class="bclass"><b>ADMISSION</b><span><b><i><a href="ooad3.html">APPLY</a><br>VISIT<br>FINANCIAL AID<br>TUTION FEES</i></b></span></button>
+<button type="button" id="button2"><b>ACADEMICS</b></button>
+<button type="button" id="button2"><b>RESEARCH</b></button>
+<button type="button" id="button2"><b>GLOBAL</b></button>
+<button type="button" id="button2"><b>ENGAGEMENT</b></button>
+<br>
+<br>
+<p> REGISTRATION FORM </p>
+<div style="float:right">
+<button type="button" style="height:100px; width:100px"><b>APPLICANT PHOTO</b></button>
+<br>
+<td><input type="file" name="attach" value="choose file"  id="attach"  size="25"/></td>
+<label id="rlabel"></label>
+</div>
+<p><font color="red">*</font>Required field</p>
+
+<p><label id="nameerror">NAME IS MANIDATORY</label></p>
+<p><label id="emailerror">EMAIL IS MANIDATORY</label></p>
+<p><label id="termerror">TERM HAS TO BE SELECTED</label></p>
+<p><label id="departmenterror">DEPARTMENT SHOULD BE SELECTED</label></p>
+<p><label id="courseerror">COURSES OFFERED SHOULD BE CHECK AND THEN SELECTED</label></p>
+<p><label id="professorerror">SELECT PROFESSOR WITH RESPECT TO THE COURSE SELECTED</label></p>
+<p><label id="markserror">ENTER MARKS-MANDATORY</label></p>
+<p><label id="accepted">ACCEPT TO THE LISCENSE TERMS</label></p>
+<p><label id="passworderror">ENTER PASSWORD FIELD</label></p>
+
+<form name="form1" action="ooadserv1" method="GET">
+
+<table border="0">
+<tr>
+<td><b><font color="red">*</font>NAME:</b><br>(It is important to enter your name <br>accurately as it appears on <br>other official documents.)</td>
+<td><input type="text" name="name" id="name" onblur="checkname()" size="20"></td>
+</tr>
+
+<br>
+<tr>
+<td id="id1"><b>BIRTH DATE:</b></td>
+<td><input type="date" name="birthday" size="20"></td>
+</tr>
+<br>
+<tr>
+<td id="id1"><b><font color="red">*</font>PERSONAL EMAIL ADDRESS:</b></td>
+<td><input type="text" name="email" id="email" onblur="emailadd()" size="20"></td>
+</tr>
+<tr>
+<td id="id1"><b>CITIZENSHIP:</b></td>
+<td><input type="text" name="citizenship" size="20"></td>
+</tr>
+<tr>
+<td id="id1"><b>SOCIAL SECURITY NUMBER:</b></td>
+<td><input type="text" name="ssn" size="20"></td>
+</tr>
+
+<tr>
+<td id="id1"><b><font color="red">*</font>TERM:</b></td>
+<td>
+<select name="term" id="term" onblur="termnew()">
+<option value="0">SELECT TERM</option>
+<option value="FALL">FALL</option>
+<option value="WINTER">WINTER</option>
+<option value="SPRING">SPRING</option>
+<option value="SUMMER">SUMMER</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td id="id1"><b><font color="red">*</font>DEPARTMENT:</b></td>
+<td> <select name="department" id="department" onblur="departmentnew()">
+			<option value="0">SELECT DEPARTMENT</option>
+		  <option value="SPACESCIENCE">SPACE SCIENCE</option> 
+          <option value="ENGINEERING">ENGINEERING</option>
+          <option value="ARCHITECTURE">ARCHITECTURE AND URMAN PLANNING</option>
+          <option value="HEALTH">PUBLIC HEALTH</option>
+		  <option value="MUSIC">MUSIC,THEATRE AND DANCE</option>
+          </select></td>
+</tr>
+
+
+          <td id="id1"><b><font color="red">*</font>COURSE SELECTION:</b></td>
+		  
+		  <td> 
+		  <select name="branch" id="course" onblur="coursenew()">
+		  <option value="0">SELECT REQUIRED COURSE</option>
+		  <option value="AERO">Aerospace Engineering (AEROSP)- ENGINEERING</option> 
+          <option value="AOSS">Atmospheric, Oceanic And Space Sciences (AOSS) -SPACE SCIENCE</option>
+          <option value="ARCH">Architecture (ARCH)-ARCHITECTURE</option>
+          <option value="BIOSTAT">Biostatistics (BIOSTAT)-PUBLIC HEALTH</option>
+          <option value="DANCE">Department of dance-MUSIC,THEATRE AND DANCE</option>
+          </select>
+          </td>
+</tr>
+<tr>
+<td id="id1"><b><font color="red">*</font>PROFESSOR REQUIRED:</b></td>
+<td><select name="professor" id="professor" onblur="professornew()">
+		  <option value="0">SELECT REQUIRED PROFESSOR</option>
+          <option value="M.james">M.james</option> 
+          <option value="P.Thomas">P.Thomas</option>
+          <option value="J.E.Smith">J.E.Smith</option>
+          <option value="L.K.Hilary">L.K.Hilary</option>
+          <option value="S.Stiles">S.Stiles</option>
+		  <option value="P.Derek">P.Derek</option>
+		  </select>
+</td>
+</tr>
+
+<tr>
+<td id="id1"><b><font color="red">*</font>MARKS OBTAINED:</b><br>(in percentage)</td>
+<td><input type="text" name="marks" id="marks" onblur="marksaccq()" size="20"></td>
+</tr>
+
+<tr>
+<td id="id1"><b><font color="red">*</font>PASSWORD:</b><br>(should contain atleast <br>5 characters)</td>
+<td><input type="password" name="pswd" id="pswd" onblur="pswdcheck()" size="20"></td>
+</tr>
+
+<tr>
+<td><label  id="ids"><b>ATTACH CERTIFICATES</b></label></td>
+<td><input type="file" name="attach" value="choose file"  id="attach"  size="25"/></td>
+<label id="rlabel"></label> 
+</tr>
+
+</table>
+
+<p>
+ I CERTIFY THAT ALL OF THE ANSWERS I WILL PROVIDE IN THIS APPLICATION ARE COMPLETE AND ACCURATE TO THE BEST
+ OF MY KNOWLEDGE AND, IF ADMITTED, I AGREE TO OBSERVE ALL THE RULES AND REGULATIONS OF MICHIGAN STATE 
+ UNIVERSITY. FAILURE TO DO SO CAN RESULT IN DISCIPLINARY ACTION. I AGREE THAT ALL DOCUMENTS SUBMITTED AS 
+ PART OF THIS APPLICATION MUST BE AUTHENTIC AND THAT ANY FALSIFICATION OR ADMISSION AND/OR ACADEMIC RECORDS
+ THROUGH OMISSION OR MISSTATEMENT BY ME IN THIS APPLICATION MAY RESULT IN CANCELLATION OF MY ADMISSION AND/OR 
+ OTHER DISCIPLINARY ACTION BY MICHIGAN STATE UNIVERSITY.<br><br>
+ 
+<b><input type="checkbox" name="terms" id="terms" onblur="accp()"/>I here by declare that the particulars given above are true</b>
+</p>
+
+<input type="submit" name="acc" id="submit" value="SUBMIT" onclick="fsubmit()"/>
+</form>
+</body>
+</html>

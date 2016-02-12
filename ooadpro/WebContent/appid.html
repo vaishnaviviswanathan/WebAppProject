@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="extcss.css">
+<style>
+#img1
+{
+float:left;
+}
+#ig
+{
+width:500px;
+display:inline;
+}
+</style>
+<script>
+var i=1;
+var num;
+var v;
+
+function app()
+{
+
+if(i==1)
+{
+var e=document.getElementById("demo");
+num=Math.floor((Math.random()*10000000));
+e.innerHTML=num;
+v=document.getElementById("appid");
+v.value=num;
+i++;
+}//if close
+
+else
+{
+var e1=document.getElementById("demo");
+e1.innerHTML=e.innerHTML;
+}//else close
+
+}
+
+
+</script>
+</head>
+
+<body background="bg.jpg">
+<h1 id="padding" style="font-size:30px ; color:white"><img src="l.jpeg" height="50" weight="50">MICHIGAN STATE UNIVERSITY</h1>
+<a href="ooqadrep.html"><img src="hom.png" width="50" height="50"></img></a>
+<button type="button" id="button2"><b>ABOUT</b></button>
+<button type="button" id="button2" class="bclass"><b>ADMISSION</b><span><b><i><a href="ooad3.html">APPLY</a><br>VISIT<br>FINANCIAL AID<br>TUTION FEES</i></b></span></button>
+<button type="button" id="button2"><b>ACADEMICS</b></button>
+<button type="button" id="button2"><b>RESEARCH</b></button>
+<button type="button" id="button2"><b>GLOBAL</b></button>
+<button type="button" id="button2"><b>ENGAGEMENT</b></button>
+<br><br>
+<p style="text-align:center; font-size:30px">SUCCESSFULLY REGISTERED</p>
+<p id="demo" style="text-align:center; font-size:30px">CLICK ON THE BUTTON TO GET NEW APPLICATION-ID</p>
+<form action="serv" method="POST">
+<p id="ig"><button type="button" style="color:green" onclick="app()"><b>APPLICATION-ID</b></button></p>
+<input type="text" id="appid" name="appid"/>
+RE-ENTER PASSWORD:<input type="password" name="pswd"/><br>
+(on click will be directed to the course selection page)<input type="submit" name="appl" style="color:green;font-weight:bold" value="CLICK TO CONFIRM SUBMISSION"/>
+</form>
+</body>
+</html>
