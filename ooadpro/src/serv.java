@@ -48,7 +48,7 @@ public class serv extends HttpServlet {
 				 
 				 java.sql.Connection con;
 				 
-				 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","tylorhoechlin");
+				 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","pswd");
 				 
 				 String field1=request.getParameter("appid");
 				 String field2=request.getParameter("pswd");
