@@ -43,7 +43,7 @@ public class ser5 extends HttpServlet {
 				 
 				 java.sql.Connection con;
 				 
-				 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","tylorhoechlin");
+				 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","pswd");
 				 String action=request.getParameter("acc");
 				 if(action.equals("SUBMIT"))
 				 {
