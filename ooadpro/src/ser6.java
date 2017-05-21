@@ -41,7 +41,7 @@ public class ser6 extends HttpServlet {
 				ResultSet result;
 				Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 				java.sql.Connection con;
-				con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","tylorhoechlin");
+				con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","pswd");
 				
 				 
 				java.sql.Statement stat=con.createStatement();
