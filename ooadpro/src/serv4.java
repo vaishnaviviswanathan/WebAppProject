@@ -44,7 +44,7 @@ public class serv4 extends HttpServlet {
 	        	
 				 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 				 java.sql.Connection con;
-				 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","tylorhoechlin");
+				 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","pswd");
 				 String field1; 
 				 String pswd1;
 				 
