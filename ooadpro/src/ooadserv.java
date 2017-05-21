@@ -43,7 +43,7 @@ public class ooadserv extends HttpServlet {
 				int i=0;
 				//Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 				java.sql.Connection con;
-				con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","vaishnavi");
+				con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ooadtab","root","pswd");
 				
 				String action=request.getParameter("acc");
 				 
